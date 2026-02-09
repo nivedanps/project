@@ -1,0 +1,143 @@
+
+/* ==================== Container ==================== */
+.add-course-container {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  width: 550px;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  animation: fadeIn 0.4s ease;
+  text-align: center;
+}
+
+.add-course-container h2 {
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+/* ==================== Navbar (Tabs) ==================== */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.navbar button {
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.25);
+  transition: 0.3s;
+  backdrop-filter: blur(10px);
+}
+
+.navbar button:hover {
+  background: rgba(0, 123, 255, 0.35);
+  color: #fff;
+}
+
+.navbar .active {
+  background: rgba(0, 123, 255, 0.45);
+  color: white;
+}
+
+/* ==================== Tab Content ==================== */
+.tab-content {
+  margin-top: 10px;
+}
+
+/* ==================== Add Course Form ==================== */
+.add-course-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Inputs */
+.add-course-form input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(10px);
+  transition: 0.2s;
+  font-size: 15px;
+}
+
+.add-course-form input:focus {
+  border-color: rgba(0, 123, 255, 0.4);
+  background: rgba(255, 255, 255, 0.35);
+  outline: none;
+}
+
+/* Submit Button */
+.add-course-form button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  transition: 0.3s;
+}
+
+.add-course-form button:hover {
+  background: rgba(0, 123, 255, 0.35);
+  color: white;
+}
+
+/* ==================== Course List ==================== */
+.course-list {
+  text-align: left;
+  padding: 10px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.course-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.course-list li {
+  padding: 6px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  transition: 0.2s;
+  background: rgba(255,255,255,0.22);
+}
+
+.course-list li:hover {
+  background: rgba(0, 123, 255, 0.25);
+  color: white;
+}
+
+/* ==================== Message ==================== */
+.msg {
+  margin-top: 12px;
+  font-weight: 600;
+  color: #0069d9;
+  text-align: center;
+}
+
+/* ==================== Animations ==================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==================== Responsive ==================== */
+@media(max-width: 650px) {
+  .add-course-container {
+    width: 92%;
+    padding: 18px;
+  }
+}

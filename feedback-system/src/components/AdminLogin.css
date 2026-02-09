@@ -1,0 +1,103 @@
+/* Center the login box */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 20px;
+}
+
+/* Liquid title */
+.login-container h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #003366;
+  text-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+/* The liquid glass login form box */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 28px;
+  width: 320px;
+
+  background: rgba(255,255,255,0.18);
+  border: 1px solid rgba(255,255,255,0.26);
+  backdrop-filter: blur(18px) saturate(200%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  
+  border-radius: 22px;
+  border: 1.5px solid rgba(255,255,255,0.45);
+
+  box-shadow: 0px 10px 35px rgba(0,0,0,0.12);
+  animation: blobFloat 7s ease-in-out infinite;
+}
+
+@keyframes blobFloat {
+  0%,100% { border-radius: 22px; }
+  50% { border-radius: 28px; }
+}
+
+/* Inputs liquid */
+.login-form input {
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.5);
+
+  background: rgba(255,255,255,0.22);
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+
+  transition: 0.25s ease;
+}
+
+/* Input focus glow */
+.login-form input:focus {
+  outline: none;
+  border: 1px solid rgba(0,120,255,0.6);
+  background: rgba(255,255,255,0.32);
+}
+
+/* Liquid Login Button */
+.login-form button {
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+
+  border-radius: 50px;
+  border: 1.5px solid rgba(255,255,255,0.55);
+  cursor: pointer;
+
+  background: rgba(255,255,255,0.35);
+  backdrop-filter: blur(22px) saturate(180%);
+  -webkit-backdrop-filter: blur(22px) saturate(180%);
+  transition: 0.35s ease;
+}
+
+/* Hover — liquid blue */
+.login-form button:hover {
+  background: rgba(0,120,255,0.25);
+  border: 1px solid rgba(0,120,255,0.6);
+  color: #004dcf;
+  transform: scale(1.04);
+}
+
+/* Error text */
+.error {
+  font-size: 14px;
+  color: rgb(255, 57, 57);
+  text-align: center;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .login-form {
+    width: 88%;
+  }
+  .login-container h2 {
+    font-size: 26px;
+  }
+}

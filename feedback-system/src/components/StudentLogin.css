@@ -1,0 +1,104 @@
+/* Centering container */
+.student-login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Liquid Glass Form Box */
+.student-login-box {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 28px;
+  width: 320px;
+  text-align: center;
+
+  background: rgba(255,255,255,0.32);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  
+  border-radius: 22px;
+  border: 1.5px solid rgba(255,255,255,0.45);
+
+  box-shadow: 0px 10px 35px rgba(0,0,0,0.12);
+  animation: blobFloat 7s ease-in-out infinite;
+}
+
+/* Same animated curve flow */
+@keyframes blobFloat {
+  0%,100% { border-radius: 22px; }
+  50% { border-radius: 30px; }
+}
+
+/* Title */
+.student-login-box h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #004080;
+  margin-bottom: 6px;
+  text-shadow: 0px 3px 10px rgba(0,0,0,0.08);
+}
+
+/* Inputs */
+.student-login-box input {
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.5);
+
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+
+  transition: 0.25s ease;
+}
+
+/* Input focus glow effect */
+.student-login-box input:focus {
+  outline: none;
+  border: 1px solid rgba(0,120,255,0.6);
+  background: rgba(255,255,255,0.30);
+}
+
+/* Button */
+.student-login-box button {
+ padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+
+  border-radius: 50px;
+  border: 1.5px solid rgba(255,255,255,0.55);
+  cursor: pointer;
+
+  background: rgba(255,255,255,0.35);
+  backdrop-filter: blur(22px) saturate(180%);
+  -webkit-backdrop-filter: blur(22px) saturate(180%);
+  transition: 0.35s ease;
+}
+
+/* Button hover — same liquid blue */
+.student-login-box button:hover {
+  background: rgba(0,120,255,0.25);
+  border: 1px solid rgba(0,120,255,0.6);
+  color: #004dcf;
+  transform: scale(1.04);
+}
+
+/* Error text */
+.error-msg {
+  font-size: 14px;
+  color: rgb(255, 57, 57);
+  text-shadow: 0px 1px 6px rgba(255,0,0,0.18);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .student-login-box {
+    width: 88%;
+    padding: 22px;
+  }
+  .student-login-box h2 {
+    font-size: 24px;
+  }
+}

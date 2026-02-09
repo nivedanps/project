@@ -1,0 +1,102 @@
+/* ================= Department Add Page ================= */
+
+.dept-add-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Page Title */
+.dept-add-container h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(255,255,255,0.4);
+}
+
+/* Form box with glass effect */
+.dept-form {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 25px;
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px) saturate(160%);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.35);
+}
+
+/* Labels */
+.dept-form label {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+/* Input fields */
+.dept-form input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+
+  background: rgba(255,255,255,0.2);
+  color: white;
+
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.dept-form input::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+.dept-form input:focus {
+  background: rgba(255,255,255,0.35);
+  box-shadow: 0 0 6px rgba(255,255,255,0.4);
+}
+
+/* Error text */
+.error {
+  color: rgb(255, 120, 120);
+  font-size: 14px;
+  text-align: center;
+  margin-top: 6px;
+}
+
+/* Submit Button */
+.submit-btn {
+  margin-top: 8px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+
+  background: rgba(0,160,255,0.35);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.4);
+  transition: 0.25s ease;
+}
+
+.submit-btn:hover {
+  background: rgba(0,160,255,0.65);
+  transform: scale(1.03);
+}
+
+/* Responsive Fix */
+@media (max-width: 500px) {
+  .dept-form {
+    width: 90%;
+  }
+}

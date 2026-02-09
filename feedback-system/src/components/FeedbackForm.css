@@ -1,0 +1,41 @@
+.feedback-container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.faculty-box {
+  background: #f7f9fc;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  border: 1px solid #d3d8e0;
+}
+
+.question-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.rating-box {
+  display: flex;
+  gap: 10px;
+}
+
+.submit-btn {
+  padding: 12px 25px;
+  font-size: 17px;
+  background: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.selected-rating {
+  background: rgba(0, 150, 255, 0.2);
+  border-radius: 4px;
+  padding: 2px 5px;
+}

@@ -1,0 +1,265 @@
+
+
+/* ==================== Navbar ==================== */
+.dept-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  padding: 12px 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+.dept-navbar h3 {
+  font-size: 20px;
+}
+
+.dept-navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.dept-navbar li {
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+}
+
+.dept-navbar li:hover {
+  background: rgba(0, 123, 255, 0.3);
+  color: #fff;
+}
+
+/* ==================== Faculty Header ==================== */
+.faculty-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.faculty-header h2 {
+  font-size: 24px;
+}
+
+.add-faculty-btn {
+  padding: 8px 16px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.add-faculty-btn:hover {
+  background: rgba(0, 123, 255, 0.3);
+  color: #fff;
+}
+
+/* ==================== Department List (Vertical) ==================== */
+.department-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.department-list button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.department-list button:hover {
+  background: rgba(0, 123, 255, 0.3);
+  color: #fff;
+}
+
+/* ==================== Faculty Cards ==================== */
+.faculty-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faculty-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.faculty-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.faculty-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.faculty-card p {
+  margin: 4px 0;
+}
+
+.assigned-courses ul {
+  margin: 5px 0 0 20px;
+}
+
+/* ==================== Faculty Buttons ==================== */
+.faculty-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.assign-btn, .analyze-btn {
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.assign-btn:hover {
+  background: rgba(0, 123, 255, 0.3);
+  color: #fff;
+}
+
+.analyze-btn:hover {
+  background: rgba(255, 193, 7, 0.3);
+  color: #fff;
+}
+
+/* ==================== Popup Overlay ==================== */
+.popup-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.popup-box {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  width: 400px;
+  max-width: 90%;
+  animation: popupScale 0.25s ease;
+}
+
+.popup-box h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.popup-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.15);
+  color: #000;
+  backdrop-filter: blur(10px);
+  outline: none;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.save-btn, .cancel-btn {
+  flex: 1;
+  padding: 10px 0;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.save-btn:hover {
+  background: rgba(0, 123, 255, 0.3);
+  color: #fff;
+}
+
+.cancel-btn:hover {
+  background: rgba(220, 53, 69, 0.3);
+  color: #fff;
+}
+
+/* ==================== Faculty Grid Layout ==================== */
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+
+/* ==================== Animations ==================== */
+@keyframes fadeIn {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+
+@keyframes popupScale {
+  from {transform: scale(0.8); opacity: 0;}
+  to {transform: scale(1); opacity: 1;}
+}
+
+/* ==================== Responsive ==================== */
+@media(max-width: 768px) {
+  .faculty-card {
+    padding: 15px;
+  }
+
+  .faculty-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .dept-navbar ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+

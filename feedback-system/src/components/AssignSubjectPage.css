@@ -1,0 +1,109 @@
+/* ==================== Base ==================== */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #e0e0e0, #f5f5f5);
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+/* ==================== Container ==================== */
+.assign-container {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  width: 450px;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  animation: fadeIn 0.4s ease;
+  text-align: center;
+}
+
+.assign-container h2 {
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+/* ==================== Form ==================== */
+.assign-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.assign-form input,
+.assign-form select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.22);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: 0.2s;
+  font-size: 15px;
+}
+
+.assign-form input:focus,
+.assign-form select:focus {
+  background: rgba(255,255,255,0.35);
+  border-color: rgba(0, 123, 255, 0.4);
+  outline: none;
+}
+
+/* ==================== Assign Button ==================== */
+.assign-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.25);
+  transition: 0.3s;
+}
+
+.assign-form button:hover {
+  background: rgba(0, 123, 255, 0.35);
+  color: white;
+}
+
+/* ==================== Message ==================== */
+.msg {
+  margin-top: 12px;
+  font-weight: 600;
+  color: #0069d9;
+}
+
+/* ==================== Back Button ==================== */
+.back-btn {
+  margin-top: 15px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  background: rgba(255,255,255,0.25);
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: rgba(220, 53, 69, 0.3);
+  color: white;
+}
+
+/* ==================== Animations ==================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==================== Responsive ==================== */
+@media(max-width: 600px) {
+  .assign-container {
+    width: 90%;
+    padding: 18px;
+  }
+}

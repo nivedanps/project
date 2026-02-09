@@ -1,0 +1,113 @@
+/* Main Container - Transparent + Centered */
+.analyze-container {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  text-align: center;
+  color: #fff;
+}
+
+/* Heading */
+.analyze-container h2 {
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+/* ================= LIQUID GLASS COURSE CARD ================= */
+.course-glass-box {
+  background: rgba(255, 255, 255, 0.20);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 18px;
+
+  padding: 22px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 900px;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
+  color: #000;
+}
+
+.course-glass-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Course Title */
+.course-glass-box h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Course details */
+.course-glass-box p {
+  margin-top: 6px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* ================= GLASS QUESTIONS GRID ================= */
+.questions-feedback {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 15px;
+  margin-top: 18px;
+}
+
+/* ================= LIQUID GLASS SMALL BOX ================= */
+.question-glass {
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border-radius: 12px;
+  padding: 12px;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: 0.3s;
+}
+
+.question-glass:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.question-glass p {
+  margin: 0 0 5px 0;
+  font-weight: 600;
+  color: #222;
+}
+
+.question-glass span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Overall Rating */
+.overall-rating {
+  margin-top: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #e67e22;
+}
+
+/* Loading Text */
+.analyze-container p {
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .questions-feedback {
+    grid-template-columns: 1fr;
+  }
+}
